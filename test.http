@@ -1,0 +1,29 @@
+### Get All Items
+GET http://localhost:5000/items HTTP/1.1
+
+
+### Get Single Item
+GET http://localhost:5000/items/2 HTTP/1.1
+
+### ADD ITEM
+POST http://localhost:5000/items HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "New Item", 
+    "price": "10.00",
+    "quantity": "10"
+}
+
+###  REMOVE ITEM
+DELETE  http://localhost:5000/items/4020beed-17b8-4ca3-a91a-3c6084ab53b0 HTTP/1.1
+
+### UPDATE ITEM
+PUT http://localhost:5000/items/145d5146-2af6-4bc5-ad47-3a39b68c447e HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Pine Apple", 
+    "price": "10.00",
+    "quantity": "10"
+}
